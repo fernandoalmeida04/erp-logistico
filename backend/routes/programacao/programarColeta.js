@@ -13,7 +13,6 @@ const ordemcoletaRoutes = require('./ordemcoleta');
 const programacao = require('./programacao');
 const specificCases = require('./specificCases');
 const apiNucci = process.env.APP_API_URL_NUCCI;
-const googleMapsApiKey = 'AIzaSyBn1iQ-G1WQNYa-WHoZ7wQzhdAE6xNq5Kw';
 const router = express.Router();
 
 router.use(cors());
