@@ -1,0 +1,113 @@
+.register-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.register-container input,
+.register-container button,
+.register-container select {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-container input {
+    width: 96%;
+}
+
+.register-container select {
+    width: 100%;
+}
+
+.register-container input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-container button {
+    background-color: #f37215;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0;
+}
+
+.register-container button:hover {
+    background-color: #e66c00;
+}
+
+.bi-list {
+    margin-top: 20px;
+}
+
+.bi-list h3 {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.bi-list div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bi-list input {
+    margin-right: 10px;
+    width: 5%;
+    margin-bottom: 2px;
+}
+
+.bi-list label {
+    color: #495057;
+}
+
+.back-button {
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    display: inline-block;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 0px;
+    top: 39%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 10%;
+    padding: 9px;
+    margin-bottom: 0;
+}
+
+.password-container .toggle-password:hover {
+    background-color: transparent;
+}
+

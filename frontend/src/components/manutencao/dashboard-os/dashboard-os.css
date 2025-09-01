@@ -1,0 +1,6 @@
+.dashboard-os {
+    width: 98%; /* Define a largura da dashboard */
+    max-width: 96vw; /* Define um limite máximo de largura */
+    background-color: white; /* Cor de fundo da dashboard */
+    border-radius: 8px; /* Bordas arredondadas */
+}

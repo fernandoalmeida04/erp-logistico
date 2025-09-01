@@ -1,0 +1,100 @@
+body{
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.order-container{
+  min-height: 95vh;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  background-color: green;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.contador-tempo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2{
+  color: #000;
+}
+
+.modalLista {
+  button {
+    color: #ffffff;
+    background-color: #f37215;
+    font-size: 19px;
+    border: 1px solid #000000;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  button:hover {
+    color: #ffffff;
+    background-color: #d96417;
+  }
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.card label {
+  font-size: 13px;
+  color: #fff;
+  height: min-content;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  

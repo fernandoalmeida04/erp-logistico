@@ -1,0 +1,5 @@
+.MuiTableBody-root *:hover {
+    background-color: unset !important;
+    text-decoration: none !important;
+    transform: none !important;
+}

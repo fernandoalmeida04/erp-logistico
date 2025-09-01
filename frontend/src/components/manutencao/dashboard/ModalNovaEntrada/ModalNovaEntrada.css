@@ -1,0 +1,85 @@
+.modal-nova-entrada {
+    position: relative; /* Necessário para posicionar o botão dentro do modal */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os inputs */
+    align-items: flex-start; /* Alinha os labels ao topo */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-placa {
+    width: 70%; /* Garante que os inputs ocupem o espaço disponível */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.input-placa2 {
+    width: 90%; /* Garante que os inputs ocupem o espaço disponível */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-disabled {
+    background-color: #e0e0e0; /* Cor de fundo para inputs somente leitura */
+    cursor: not-allowed;
+}
+
+.form-group > div {
+    flex: 1; /* Faz com que os inputs tenham tamanhos iguais */
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do input */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submit-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+.success-message {
+    color: #28a745; /* Verde */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}

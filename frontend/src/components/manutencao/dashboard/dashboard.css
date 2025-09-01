@@ -1,0 +1,237 @@
+
+.dashboard {
+    width: 100%;
+    max-width: 80vw;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    margin-bottom: 20px; /* Espaço entre o cabeçalho e a tabela */
+}
+
+.dashboard-header h1 {
+    margin: 0 0 10px 0; /* Espaço abaixo do título */
+    font-size: 24px;
+}
+
+.dashboard-buttons {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Define largura fixa para as colunas */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    width: 33%; /* Define uma largura fixa proporcional para cada coluna */
+}
+
+th {
+    background-color: #f4f4f4;
+    white-space: nowrap; /* Impede quebra de linha no cabeçalho */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.new-entry-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-entry-button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 440px; /* Largura fixa do modal */
+    max-width: 90%; /* Responsivo para telas menores */
+    text-align: center;
+    position: relative;
+}
+
+.save-modal-button {
+    background-color: #00a30e; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.save-modal-button:hover {
+    background-color: #00830b; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545;
+    z-index: 999;
+    padding: 5px 10px;
+}
+
+.close-modal-button:hover {
+    background-color: #c82333; /* Vermelho ao passar o mouse */
+}
+
+.end-register-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545;
+    z-index: 999;
+    padding: 5px 10px;
+}
+
+.end-register-button:hover {
+    background-color: #c82333; /* Vermelho ao passar o mouse */
+}
+
+.column-menu label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pagination span {
+    font-size: 14px;
+}
+
+/* Contêiner para paginação e botão de colunas */
+.pagination-container {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    align-items: center; /* Alinha os elementos verticalmente */
+    margin-top: 20px; /* Espaço acima do contêiner */
+}
+
+/* Contêiner para o botão e o menu */
+.column-menu-container {
+    position: relative; /* Define o contêiner como referência para o posicionamento absoluto */
+}
+
+/* Botão para abrir o menu de colunas */
+.column-menu-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column-menu-button:hover {
+    background-color: #0056b3;
+}
+
+/* Menu flutuante de colunas */
+.column-menu {
+    position: absolute;
+    top: 0;
+    left: 110%; /* Posiciona o menu à direita do botão */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px; /* Define uma largura mínima para o menu */
+}
+
+.column-menu h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.column-menu label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}

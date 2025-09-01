@@ -1,0 +1,69 @@
+/* Estilo geral para o container */
+.register-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Títulos */
+.register-container h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.register-container button {
+    background-color: #f37215;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.register-container button:hover {
+    background-color: #e66c00;
+}
+
+/* Lista de BIs */
+.bi-list {
+    margin-top: 20px;
+}
+
+.bi-list h3 {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+/* Removendo estilos desnecessários */
+.bi-list div {
+    margin-bottom: 10px;
+}
+
+.bi-list input {
+    margin-right: 10px;
+}
+
+.bi-list label {
+    color: #495057;
+}
+
+/* Botão de voltar */
+.back-button {
+    background-color: #6c757d;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
