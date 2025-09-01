@@ -71,26 +71,6 @@ O Sistema de Gestão Logística foi desenvolvido para otimizar os processos de m
 
 ## 📦 Instalação e Uso
 
-1. Clone o repositório:
-   ```bash
-   git clone [URL_DO_REPOSITORIO]
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-3. Configure as variáveis de ambiente no arquivo `.env`:
-   ```
-   REACT_APP_API_URL=http://seu-servidor-api.com
-   ```
-
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm start
-   ```
-
 ## 📱 Interfaces do Sistema
 
 ### Interface de Checklist
